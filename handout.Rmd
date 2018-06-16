@@ -151,6 +151,7 @@ usepackage_latex("threeparttable")
 usepackage_latex("threeparttablex")
 usepackage_latex("ulem", options = "normalem")
 usepackage_latex("makecell")
+usepackage_latex("multicol")
 
 # create and style a kable for bingo
 bingo_card <- choices %>% 
@@ -189,8 +190,23 @@ talk_table
 
 ## R-Ladies Sydney info
 
-- Website: http://rladiessydney.org/, Meetup:  http://meetup.com/rladies-sydney, Twitter: @rladiessydney, Email: sydney@rladies.org, GitHub: https://github.com/rladiessydney
-- Jen Richmond: @JenRichmondPhD, Steph De Silva: @StephdeSilva, Lisa Williams: @williamslisaphd, Dani Navarro: @djnavarro
+\begin{multicols}{2}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+\item Website: http://rladiessydney.org/
+\item Meetup:  http://meetup.com/rladies-sydney
+\item Twitter: @rladiessydney
+\item Email: sydney@rladies.org
+\item GitHub: https://github.com/rladiessydney
+\item Jen Richmond: @JenRichmondPhD 
+\item Steph De Silva: @StephdeSilva
+\item Lisa Williams: @williamslisaphd
+\item Dani Navarro: @djnavarro
+\end{itemize}
+
+\end{multicols}
 
 
 
