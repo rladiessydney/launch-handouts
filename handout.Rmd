@@ -31,6 +31,9 @@ choices <- c(
   "Is an academic",
   "Loves cheese",
   "Has a Twitter account",
+  "Does not have a Facebook account",
+  "Checks Twitter more frequently than email",
+  "Knows how to tweet from within R",
   "Has used a package you’ve never heard of",
   "Has 3 siblings",
   "Likes to run",
@@ -43,9 +46,10 @@ choices <- c(
   "Taught themself to code",
   "Is new to using R",
   "Has used a library card catalog",
-  "Can knit",
+  "Can knit (with needles and wool)",
+  "Prefers read.csv to read_csv",
   "Has *opinions* about <- versus =",
-  "Knows regular expressions",
+  "Actually likes regular expressions",
   "Has at least one laptop hex sticker",
   "Has kids",
   "Can explain why Snapchat exists ",
@@ -55,7 +59,43 @@ choices <- c(
   "Kept their New Years resolution",
   "Has gone scuba or sky diving",
   "Has done the Harbour bridge climb",
-  "Knows an RStudio trick you don't"
+  "Is a Mac user",
+  "Uses a standing desk",
+  "Enjoys gardening",
+  "Holds a local public library card",
+  "Has an interesting pet (not cat or dog)",
+  "Likes to dance",
+  "Prefers merlot to shiraz",
+  "Favourite food is sushi",
+  "Thinks Messina is overrated",
+  "Has never been to Messina",
+  "Has been to Uluru",
+  "Is a member of other data science Meetups",
+  "Is a member of Meetups not related to data science",
+  "Uses a keep cup every day",
+  "Owns reusable stainless steel straws",
+  "Knows how to record but not write Excel macros",
+  "Loves Andy Field",
+  "Can see the Opera House from their office",
+  "Can see the Harbour Bridge from their office",
+  "Swims in the ocean more than once a week",
+  "Wants to be a data scientist",
+  "Wants to be an academic",
+  "Is a data scientist",
+  "Has never been to NZ",
+  "Uses plastic free shampoo/conditioner",
+  "Knows a Trump supporter",
+  "Has a cat",
+  "Has a dog",
+  "Has a pet with a geeky name",
+  "Loves Karaoke",
+  "Doesn’t own a car",
+  "Plays a musical instrument",
+  "Walks 10000 steps every day",
+  "Has been to another RLadies chapter event",
+  "Is R-Curious",
+  "Prefers a flat white to a long black",
+  "Prefers chardonnay to sav. blanc"
 )
 
 # information for live tweeting
@@ -154,4 +194,4 @@ talk_table
 
 
 
-  
+
