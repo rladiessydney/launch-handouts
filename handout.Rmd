@@ -1,0 +1,157 @@
+---
+title: "Lightning Talks Handout"
+author: "R-Ladies Sydney"
+date: "20/06/2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(magrittr)
+library(knitr)
+library(kableExtra)
+library(tibble)
+```
+
+```{r, echo=FALSE}
+# possible choices to include in the bingo
+choices <- c(
+  "Grew up in Sydney",
+  "Enjoys cooking",
+  "Works in finance",
+  "Commutes to work on a bike",
+  "Has a (mini) library of stats textbooks",
+  "Knows C++",
+  "Remembers floppy disks",
+  "Lived in Boston for a time",
+  "Has needed to let a data analysis run for 24+ hours",
+  "Teaches statistics",
+  "Has met Hadley Wickham",
+  "Has written their own R package",
+  "Is an academic",
+  "Loves cheese",
+  "Has a Twitter account",
+  "Has used a package you’ve never heard of",
+  "Has 3 siblings",
+  "Likes to run",
+  "Grew up on a farm",
+  "Has 3+ data analysis apps on their computer",
+  "Does yoga",
+  "Is a member of Datacamp",
+  "Is a PhD student",
+  "Prefers Python to R",
+  "Taught themself to code",
+  "Is new to using R",
+  "Has used a library card catalog",
+  "Can knit",
+  "Has *opinions* about <- versus =",
+  "Knows regular expressions",
+  "Has at least one laptop hex sticker",
+  "Has kids",
+  "Can explain why Snapchat exists ",
+  "Grew up in a small town",
+  "Can play an unusual instrument",
+  "Has run an experiment that didn’t work",
+  "Kept their New Years resolution",
+  "Has gone scuba or sky diving",
+  "Has done the Harbour bridge climb",
+  "Knows an RStudio trick you don't"
+)
+
+# information for live tweeting
+talks <- tibble(
+  name = c(
+    "Jessica Lee",
+    "Emi Tanaka",
+    "Wendy Wong",
+    "Sarah Romanes",
+    "Zoe Meers",
+    "Lovisa Lannesand",
+    "Kate Dodds",
+    "Charles Gray"
+  ),
+  twitter_handle = c(
+    " ",
+    "@statsgen",
+    "@abc_wendsss",
+    "@sarah_romanes",
+    "@zoe_meers",
+    " ",
+    "@kate_munnik",
+    "@cantabile"
+  ),
+  talk_title = c(
+    "Why I R?",
+    "Making a Shiny interactive web application using R",
+    "Transitioning from financial planning to data science",
+    "My long journey learning R - then and now",
+    "ggparliament: Parliament plots in the tidyverse",
+    "From Excel to R in the world of finance",
+    "Learning the lingo - An R newbie’s perspective",
+    "My experience at runconf18"
+  )
+)
+
+nrow <- 8
+ncol <- 2
+
+# latex package loading needs to be done explicitly
+# when we're calling rmarkdown::render from big_doc.R
+usepackage_latex("booktabs")
+usepackage_latex("longtable")
+usepackage_latex("array")
+usepackage_latex("multirow")
+usepackage_latex("xcolor", options="table")
+usepackage_latex("wrapfig")
+usepackage_latex("float")
+usepackage_latex("colortbl")
+usepackage_latex("pdflscape")
+usepackage_latex("tabu")
+usepackage_latex("threeparttable")
+usepackage_latex("threeparttablex")
+usepackage_latex("ulem", options = "normalem")
+usepackage_latex("makecell")
+
+# create and style a kable for bingo
+bingo_card <- choices %>% 
+  sample(size = nrow * ncol) %>%
+  matrix(nrow = nrow, ncol = ncol) %>% 
+  kable(format = "latex", booktabs=TRUE) %>% 
+  kable_styling(latex_options = "striped")  
+
+# ditto for the talks
+talk_table <- talks %>% 
+  kable(format = "latex", booktabs=TRUE) %>% 
+  kable_styling(latex_options = "striped")  
+```
+
+## Get to know the Sydney R-Ladies!
+
+It's a launch event, so why not get to know your fellow R-Ladies? As an ice-breaker, every handout has a "bingo" card. See if you can find someone who...
+
+```{r,echo=FALSE}
+bingo_card
+```
+
+The bingo cards are randomised -- using R, naturally, because we are stats nerds! -- so everyone should have a slightly different list of things to find! 
+
+## Want to live tweet about the talks?
+
+```{r,echo=FALSE}
+talk_table
+```
+
+
+- Don't forget to @ the speaker in the tweet :-)
+- Include the #rladies hashtag. Adding @rladiessydney optional
+- Include a picture! (speaker or slides)
+- Speaker info is on the blog: http://rladiessydney.org/posts/lightning-talks/
+
+## R-Ladies Sydney info
+
+- Website: http://rladiessydney.org/, Meetup:  http://meetup.com/rladies-sydney, Twitter: @rladiessydney, Email: sydney@rladies.org, GitHub: https://github.com/rladiessydney
+- Jen Richmond: @JenRichmondPhD, Steph De Silva: @StephdeSilva, Lisa Williams: @williamslisaphd, Dani Navarro: @djnavarro
+
+
+
+  
