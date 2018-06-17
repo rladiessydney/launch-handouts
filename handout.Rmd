@@ -5,9 +5,9 @@ header-includes:
   - \usepackage[scaled]{helvet}
   - \renewcommand\familydefault{\sfdefault} 
   - \usepackage[T1]{fontenc}
+  - \pagenumbering{gobble}
 output: pdf_document
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -178,7 +178,7 @@ It's a launch event, so why not get to know your fellow R-Ladies? As an ice-brea
 bingo_card
 ```
 
-The items on the bingo cards have been randomised -- using R, naturally -- so everyone should have a different list of things to find! 
+The items have been randomised -- using R, naturally -- so everyone should have a different list! 
 
 ## Want to live tweet about the talks?
 
@@ -188,9 +188,9 @@ talk_table
 
 
 - Don't forget to @ the speaker in the tweet :-)
-- Include the #rladies hashtag. Adding @rladiessydney optional
-- Include a picture! (speaker or slides)
-- Speaker info is on the blog: http://rladiessydney.org/posts/lightning-talks/
+- Include the **#rladies** hashtag. Adding **@rladiessydney** optional
+- Include a picture if you have one! (speaker or slides)
+- More speaker info is on the blog: **rladiessydney.org/posts/lightning-talks**
 
 ## R-Ladies Sydney info
 
