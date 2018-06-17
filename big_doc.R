@@ -1,7 +1,7 @@
 library(rmarkdown)
 library(tabulizer)
 
-npages <- 5
+npages <- 80
 files <- paste0("./temp_handout",1:npages,".pdf")
 
 for(i in 1:npages) {
