@@ -1,9 +1,13 @@
 ---
 title: "R-Ladies Sydney Launch - Lightning Talks!"
-author: "Organisers: Jen Richmond, Steph de Silva, Lisa Williams & Dani Navarro"
 date: "20 June 2018"
+header-includes:
+  - \usepackage[scaled]{helvet}
+  - \renewcommand\familydefault{\sfdefault} 
+  - \usepackage[T1]{fontenc}
 output: pdf_document
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
