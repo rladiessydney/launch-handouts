@@ -121,7 +121,7 @@ talks <- tibble(
     "@sarah_romanes",
     "@zoe_meers",
     " ",
-    "@kate_munnik",
+    "@kate_c_dodds",
     "@cantabile"
   ),
   talk_title = c(
